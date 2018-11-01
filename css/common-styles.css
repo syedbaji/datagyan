@@ -1,0 +1,28 @@
+.container-fluid{
+    width: 100%;
+}
+.image-resize{
+    width: 100%;
+}
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block;
+}
+.height-normal{
+    min-height: 300px;
+    max-height: 1500px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    opacity: 1;
+}
+.height-zero{
+    height: 0px;
+    opacity:0;
+    background: transparent !important;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
