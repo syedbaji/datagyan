@@ -1,0 +1,155 @@
+section.under_menu_section{
+    background: url(../images/about_bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 150px;
+}
+section.under_menu_section.courses-section{
+    height: 250px;
+}
+
+section.under_menu_section > div{
+    background: rgba(51,51,51,0.9);
+    height: 100%;
+}
+.under_menu_section h1{
+    font-size: 35px;
+}
+.under_menu_section p{
+    color:rgba(255,255,255,0.3);
+    font-size: 12px;
+}
+.courses_content_section{
+    color: white;
+}
+.courses_content_section .course-block{
+    cursor: pointer;
+}
+.courses_content_section .course-block:first-child.active:after,
+.courses_content_section .course-block:nth-child(2).active:after,
+.courses_content_section .course-block:last-child.active:after{
+    content: ' ';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: auto;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    z-index: 9999;
+    overflow: visible;
+}
+.courses_content_section .course-block:first-child:after{
+    border-top: solid 10px #3e87ba;
+}
+.courses_content_section .course-block:nth-child(2):after{
+    border-top: solid 10px #e09911;
+}
+.courses_content_section .course-block:last-child:after{
+    border-top: solid 10px #df353d;
+}
+.courses_content_section .course-block:first-child,
+.courses_content_section .course-block:nth-child(2),
+.courses_content_section .course-block:last-child{
+    background-size: cover;
+}
+.courses_content_section .course-block:first-child{
+    background: url(../images/course1.jpeg) no-repeat center center;
+}
+.courses_content_section .course-block:nth-child(2){
+    background: url(../images/course2.jpg) no-repeat center center;
+}
+.courses_content_section .course-block:last-child{
+    background: url(../images/course3.jpeg) no-repeat center center;
+}
+.courses_content_section .course-block:hover{
+    
+}
+.courses_content_section .course-block:first-child > div,
+.courses_content_section .course-block:nth-child(2) > div,
+.courses_content_section .course-block:last-child > div{
+    min-height: 200px;
+}
+.courses_content_section .course-block > div h2{
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.courses_content_section .course-block:first-child > div,
+.course-one-content{
+    background: rgba(63,144,201,0.89);
+}
+.courses_content_section .course-block:nth-child(2) > div,
+.course-two-content{
+    background: rgba(245,165,12,0.89);
+}
+.courses_content_section .course-block:last-child > div,
+.course-thr-content{
+    background: rgba(244,52,61,0.89);
+}
+.course-details{
+    background: #3a3f42;
+    position: relative;
+}
+.course-one-content{
+    border-top: solid 8px rgba(63,144,201,0.89);
+}
+/* .course-one-content:after{
+    content: ' ';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+    border-bottom: solid 40px red;
+    z-index: 9999;
+    margin-top: -32px;
+    overflow: visible;
+} */
+.course-two-content{
+    border-top: solid 8px rgba(245,165,12,0.89);
+    margin-top: -8px;
+}
+.course-thr-content{
+    border-top: solid 8px rgba(244,52,61,0.89);
+    margin-top: -8px;
+}
+.course-details h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+.course-details h3+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.course-details .rating span:not(:last-child){
+    font-size: 24px;
+    padding-right: 8px;
+    color: #f4c150;
+}
+.course-details h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+.course-details .course-what-you-learn ul{
+    max-height: 400px;
+}
+.course-details .course-what-you-learn ul li,
+.course-details .course-requirements ul li{
+    flex: 1 1 auto;
+    padding: 8px 0;
+    list-style-type: square;
+}
+@media screen and (max-width: 768px){
+    section.about_content_section > div > div > div.row:first-child > div:last-child{
+        order: -1;
+    }
+    section.about_content_section .show-off-div {
+        min-height: 40px;
+    }
+}
