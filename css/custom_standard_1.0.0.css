@@ -1455,7 +1455,10 @@
         padding-left: 0 !important;
     }
     .no-padding-xs, .padding-xs-0{
-        padding: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
     }
     /*Info: Custom xs margins start here */
     .margin-xs-64{
