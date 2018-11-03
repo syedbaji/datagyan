@@ -324,7 +324,7 @@ $('#cssmenu li.active').addClass('open').children('ul').show();
 			// Shuffle
 // -------------------------------------------------------------
 
-$(window).load(function() {
+$(window).on('load', function() {
     /** this is come when complete page is fully loaded, including all frames, objects and images **/
 
     if ($('#gridWrapper').length > 0) {
