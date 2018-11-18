@@ -1546,11 +1546,10 @@ background-color:rgba(255, 255, 255, 0.13);
 	padding:0px;
 }
 .md_serv_box ul li{
-	float:left;
-	width:46%;
-	list-style:none;
-	margin-right:20px;
-	margin-bottom:20px;
+    list-style: none;
+    flex: 1 1 30%;
+    min-height: 120px;
+    margin: 0 10px 10px 0;
 }
 .md_serv_box ul li:first-child{
 	background: url('../images/placements/amazon.png') no-repeat center center;
@@ -2634,7 +2633,7 @@ background-color:rgba(255, 255, 255, 0.13);
 }
 .blog_txt_info ul li:first-child{
 	position:relative;
-	flex: 1 1 100%;
+	/* flex: 1 1 100%; */
 }
 .blog_txt_info ul li:last-child{
 	text-align: right;
@@ -3576,7 +3575,6 @@ margin-bottom:0;}
 	}
 	.md_serv_box ul li{
 		width:100%;
-		margin-right:0;
 	}
 	.team_about {
     width: 100%;
