@@ -145,15 +145,6 @@ section.under_menu_section > div{
     padding: 8px 0;
     list-style-type: square;
 }
-.modal-title {
-    color: #333 !important;
-}
-@media (min-width: 768px){
-    .modal-dialog {
-        width: 350px !important;
-        margin: 30px auto;
-    }
-}
 @media screen and (max-width: 768px){
     section.about_content_section > div > div > div.row:first-child > div:last-child{
         order: -1;

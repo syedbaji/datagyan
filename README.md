@@ -1,2 +1,2 @@
 # datagyan
-Data gyan repo
+I-DATA ANALYST repo
