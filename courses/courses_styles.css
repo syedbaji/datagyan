@@ -37,7 +37,7 @@ section.under_menu_section > div{
     right: auto;
     border-left: solid 10px transparent;
     border-right: solid 10px transparent;
-    z-index: 9999;
+    z-index: 7;
     overflow: visible;
 }
 .courses_content_section .course-block:first-child:after{
@@ -144,6 +144,15 @@ section.under_menu_section > div{
     flex: 1 1 auto;
     padding: 8px 0;
     list-style-type: square;
+}
+.modal-title {
+    color: #333 !important;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 350px !important;
+        margin: 30px auto;
+    }
 }
 @media screen and (max-width: 768px){
     section.about_content_section > div > div > div.row:first-child > div:last-child{
