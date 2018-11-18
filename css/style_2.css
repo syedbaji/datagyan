@@ -32,6 +32,11 @@ Purchase:
 22.responsive css strat
 -----------------********************--------------------
 */
+:root{
+	--color-prime-dark: #333;
+	--color-prime-nav: #337ab7;
+    --color-: #f59181;
+}
 /*----------------body start------------------*/
 body,html{
 	font-family:'Open Sans', sans-serif;
@@ -813,36 +818,29 @@ textarea:focus {
 	width:100%;
 	position:relative;
 }
-.slider-area .carousel-inner .item .caption-1,
-.slider-area .carousel-inner .item .caption-2,
-.slider-area .carousel-inner .item .caption-3{
-  min-height:500px;
+.slider-area .carousel-inner .item{
+  height:600px;
 }
 .slider-area .carousel-inner .item .caption-1 {
   width:100%;
   height:100%;
-  background-position: center;
+  background: url(../images/index_slider_bg_1.jpg) no-repeat center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  background: url(../images/index_slider_bg.jpg) 50% 0 repeat-y;
   position: relative;
 }
 .slider-area .carousel-inner .item .caption-2 {
 width:100%;
   height:100%;
-  background-position: center;
+  background-size: 100%;
+  background: url(../images/index_slider_bg_2.jpg) no-repeat center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  background: url(../images/index_slider_bg.jpg) 50% 0 repeat-y;
   position: relative;
 }
 .slider-area .carousel-inner .item .caption-3 {
 width:100%;
   height:100%;
-  background-position: center;
+  background: url(../images/index_slider_bg_3.jpg) no-repeat center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  background: url(../images/index_slider_bg.jpg) 50% 0 repeat-y;
   position: relative;
 }
 .slider-area .carousel-inner .item .carousel-captions:after {
@@ -852,7 +850,7 @@ width:100%;
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0);
 }
 .slider-area .carousel-inner .item .carousel-captions .content {
   display: block;
@@ -941,8 +939,8 @@ width:100%;
 .carousel-nevigation > .prev, .pulse{
 	left:20px;
 	position:absolute;
-	width:70px;
-	height:70px;
+	width:40px;
+	height:40px;
 	border-radius:100px;
 	background-color:#346259;
 	border:5px solid #3c5350;
@@ -957,8 +955,8 @@ width:100%;
 .carousel-nevigation > .next, .pulse{
 	right:20px;
 	position:absolute;
-	width:70px;
-	height:70px;
+	width:40px;
+	height:40px;
 	border-radius:100px;
 	background-color:#346259;
 	border:5px solid #3c5350;
@@ -1018,7 +1016,7 @@ width:100%;
 }
 .carousel-nevigation svg{
 	fill:white;
-	margin-top:10px; margin-left:10px;
+	margin-top:0px; margin-left:0px;
 }
 
 .hs_slider_right_tabs_wrapper{
